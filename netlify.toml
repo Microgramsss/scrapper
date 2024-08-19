@@ -1,13 +1,3 @@
 [build]
-  command = "npm install && npm run build" # Comando para instalar dependências e gerar o build
-  publish = "dist" # Diretório onde os arquivos construídos estão localizados (substitua por 'public', 'build', etc.)
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Access-Control-Allow-Origin = "*"
+  command = "npm install"
+  publish = "dist"
